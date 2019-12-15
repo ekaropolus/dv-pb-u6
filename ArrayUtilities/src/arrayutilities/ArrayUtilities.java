@@ -36,6 +36,14 @@ public class ArrayUtilities {
         System.out.println("El elemento más pequeño es: ");
         System.out.println(ArrayAnalaizer.findMinRec(A, n));
 
+        ArrayAnalaizer.quickSort(A, 0, n - 1);
+
+        System.out.println("Arreglo después de quicksort: ");
+        for (int i = 0; i < n; ++i) {
+            System.out.print(A[i] + " ");
+        }
+        System.out.println();
+
     }
 
 }
